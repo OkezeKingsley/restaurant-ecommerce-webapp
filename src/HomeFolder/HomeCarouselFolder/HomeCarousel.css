@@ -1,0 +1,42 @@
+/*This is css for the Carousel component*/
+.d-block{width:100%;
+        border-radius:10px;
+        object-fit: cover;
+        }
+
+.center-wrapper{display:flex;
+                justify-content: center;
+                align-items: center;}
+
+.center{width:100%;
+        min-height: 300px;
+        text-align: left;
+        }         
+
+
+/*This takes effect for screen below 750px or mobile screen size*/
+@media(max-width:750px){
+
+        .carousel{margin:0px 0px;}
+
+                
+        .h5{font-size:30px;
+            font-weight: bold;   
+            text-shadow: 5px black;}
+        
+}
+
+
+
+/*This takes affect on screen size above 750px */
+@media (min-width:750px){
+
+.carousel{margin:0 20px;}       
+
+.d-block{border-radius:10px;}
+        
+.h5{font-size: 90px;}
+
+
+
+}

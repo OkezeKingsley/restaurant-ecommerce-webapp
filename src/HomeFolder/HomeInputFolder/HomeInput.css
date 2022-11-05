@@ -1,0 +1,72 @@
+/*This is the css for the input tag of the home or HomeInput component*/
+.HomeInputContainer{background-color: white;
+                     padding-top:0px;
+                     overflow:hidden;
+                     margin:0;
+                     width:100%;
+
+}
+
+input[type="text"]{width:80%;
+                   background:white;
+                  border-radius: 20px;
+                   padding-top:10px;
+                   padding-bottom:10px;
+                   padding-left:30px;
+                   margin-top:15px;
+                   margin-bottom:20px;       
+                   border:none;
+                   box-shadow:0 5px 25px lightgray;
+                   text-decoration: none;
+     
+
+}
+
+.homeInputBtn{padding:8px 15px;
+     border-radius: 10px;
+     background-color: white;
+     border:none;
+     box-shadow:0 2px 20px lightgray;
+
+}
+
+
+/*This takes affect from screen less than 750px or mobile view */
+
+@media(max-width:750px){
+     .HomeInputContainer{background-color: rgb(250, 237, 237);
+                         margin:0;
+                         width:100%;
+                         text-align: center;}
+}
+  
+/*This takes affect when the screen size is 750px above*/
+@media(min-width:750px){ 
+
+.HomeInputContainer{background-color: white;
+          margin-top:10px;
+          overflow:hidden;
+          text-align: left;
+          padding-left:20px;}
+
+
+input[type="text"]{width:80%;
+                   border-radius: 20px;
+                   padding:10px;
+                   padding-bottom:10px;
+                   padding-left:30px;
+                   margin-top:15px;
+                   margin-bottom:40px; 
+                   background:white;
+                   border:none;
+                   box-shadow:0 5px 25px lightgray;
+}
+
+.homeInputBtn{padding:8px 15px;
+               border-radius: 10px;
+               background-color: white;
+               border:none;
+               box-shadow:0 2px 20px lightgray;
+     }
+
+}    

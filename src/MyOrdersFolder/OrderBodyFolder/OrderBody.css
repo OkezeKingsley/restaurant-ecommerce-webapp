@@ -1,0 +1,96 @@
+/*This is the css for the OrderBody component*/
+
+.OrderBodyContainer{height:100%;
+                    margin:auto;
+                    width:80%;
+                    }
+
+
+.OrderBodyCard{width:100%;   
+              margin-top:30px;  
+              margin-bottom:40px;
+                
+
+                overflow:hidden;
+                box-shadow:0 2px 20px lightgray;
+                border-radius:10px;
+
+}
+
+.OrderBodyCard:hover{transform:scale(1.02); /*this makes the card swell when it's in an hover state*/}
+
+
+#img{width:100%;}
+
+.name{text-align: center;
+      margin-top:10px;}
+
+.desc{text-align: center;}
+
+.price{text-align:center;
+       font-size:20px}
+
+#btn{width:100%;
+     font-family:inherit;
+     font-weight: bold;
+     font-size:1rem;
+     border:2px solid lightgray;
+     background:transparent;
+     padding:1rem;
+      border-radius:5px;
+      color:white;
+      background-color: red;
+      transition: background 200ms ease-in, color 200ms ease-in;
+    }
+
+#btn:hover{transform:scale(1.02);
+            background:white;
+            color:red;}
+
+
+
+
+
+
+/*go to pay css*/
+
+
+@media(min-width:750px){
+
+  .go-to-down{display:none;}
+
+  .go-to-price{display:none;}
+
+  .go-to-pay{display:none;}
+
+}
+
+
+@media(max-width:750px){
+
+  .OrderBodyContainer{width:60%;}
+
+
+
+.go-to-down{ /*this makes the button fixed to the bottom of the page*/
+  position:fixed;
+  bottom:0px;
+  width:61%;
+
+  background: white;
+  border-top: 5px solid lightgrey;}  
+
+
+  .go-to-pay{width:100%;
+    font-family:inherit;
+    font-weight: bold;
+    font-size:1rem;
+    border:2px solid lightgray;
+    background:transparent;
+    padding:1rem;
+    border-radius:5px;
+    color:white;
+    background-color: red;
+    transition: background 200ms ease-in, color 200ms ease-in;}
+
+}

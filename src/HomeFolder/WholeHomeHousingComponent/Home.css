@@ -1,0 +1,11 @@
+/*styles for the Home housing component*/
+
+
+.mini-container{width:100%;
+           margin:0;}
+
+@media(max-width:750px){
+    .min-container{width:100%;
+                margin:0;}
+
+}

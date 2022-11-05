@@ -1,0 +1,19 @@
+/*This is the OrderHead css */
+/*This makes the order heading part of the page fixed when it's viewed on Laptop screen*/
+
+.OrderHeadFlex{display:flex;
+               justify-content: space-between;}
+
+.OrderHead .main-h5{padding-top:0px;
+                font-size: 35px;
+                font-weight: bold;
+                text-decoration:underline; 
+                color:red;} 
+
+ .OrderHeadFlexIcon{margin-top:10px;
+                    font-size: 22px;;}               
+
+.OrderHead .p{padding-top:15px;
+              padding-left:10px;
+              font-size: 17px;
+         }

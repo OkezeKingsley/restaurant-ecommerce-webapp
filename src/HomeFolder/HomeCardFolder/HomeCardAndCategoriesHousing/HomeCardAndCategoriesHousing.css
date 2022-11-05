@@ -1,0 +1,40 @@
+/*This is HomeCard and Categories housing component css*/
+body{box-sizing:border-box;}
+
+.wrapper{display:grid;
+         grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+        grid-gap:5.5rem;
+         box-sizing:border-box;
+         width:100%;
+         justify-content: center;
+  }
+
+
+@media(max-width:750px){
+       .move-to-cart{background-color: red;
+                     font-family:inherit;
+                     font-weight: bold;
+                     font-size:1.3rem;
+                     border:2px solid lightgray;
+                     text-align: center;
+                     margin:40px 0;
+                     padding:20px 50px;
+                     border-radius:25px;
+                     color:white;
+                     transition: background 200ms ease-in, color 200ms ease-in;
+              
+              }
+
+
+       .move-to-cart:hover{transform: scale(1.02);
+                            color:red;
+                           background: transparent;}       
+
+       .shopping-basket{font-size: 30px;}
+
+
+}
+
+@media(min-width:750px){
+       .move-to-cart{display:none;}
+}

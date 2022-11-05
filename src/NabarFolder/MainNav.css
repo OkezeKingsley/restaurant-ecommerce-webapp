@@ -1,0 +1,123 @@
+*{
+      box-sizing: border-box;  
+      margin: 0;
+      padding: 0;
+} 
+
+
+nav{background: red;
+    color:#fff;
+    display:flex;
+    justify-content: space-between; 
+
+    }
+
+nav .mainMenu{list-style-type: none;}
+
+nav .mainMenu li{display:block;}
+
+
+nav .mainMenu li a{display:inline-block;
+                   padding:10px;
+                  text-decoration: none;
+                  text-transform: uppercase;
+                  font-size:1.1rem;}
+
+nav .openMenu{font-size:1.8rem;
+              margin:20px;
+              display:none;
+               cursor:pointer;}
+
+nav .mainMenu .closeMenu{font-size:1.8rem;
+                         display:none;
+                         cursor:pointer;}
+
+nav .logo{margin:6px;
+        font-size:1.7rem;
+        cursor:pointer;
+         margin-top:15px;
+        color:white;}
+
+.link{color:white;
+       text-decoration:none;}
+
+.link:hover{color:black;}
+
+/*This takes affect when it's veiwed on smaller screen.*/
+@media(max-width:750px){
+
+        nav .mainMenu{height:100vh;
+        position: fixed;
+        top:0;
+        right:0;
+        left:0;
+        z-index:10;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: rgb(12, 12, 12);
+        transition: top 1s;
+        display:none;}
+
+
+        nav .mainMenu .closeMenu{
+                display:block;
+                position: absolute;
+                top:20px;
+                right:20px;
+        }
+
+
+        nav .openMenu{display:block;
+                       margin-left:auto;}
+
+       
+       
+}
+
+
+
+
+
+@media(min-width:750px){
+        nav{display:grid;
+             background: red;
+             text-align: center;
+             padding-right:10px;
+             padding-left:10px;
+             border-right:10px solid white;
+             box-shadow: 0 40px 10px lightgray;
+        /*This makes this part of the page fixed to the left side when it's viewed on Laptop screen*/
+             position:fixed;
+             height:100%;
+             top:0;
+             left:0;
+             z-index:1;  
+
+        
+        }
+
+        .mainMenu{text-align:center;
+                  padding-left: 0;}
+
+        .mainMenu li{display:block;
+                     font-size: 30px;
+                     padding-left:none;
+                     padding-bottom:30px;
+                     text-align: center;
+                     margin-bottom:20px;
+                      }
+        .mainMenu li:nth-child(1){margin-bottom:40px;}              
+
+
+        .mainMenuIcon{font-size:1.7rem;
+              color:white;
+              margin-bottom:20px;}
+}
+
+
+
+
+
+
+

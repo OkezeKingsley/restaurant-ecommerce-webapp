@@ -1,0 +1,45 @@
+/*This is the OrderFooter component css*/
+@media(max-width:750px){
+
+    .OrderFooterBtn{width:100%;
+        text-align:center;
+        margin:auto;
+        background: red;
+        color:white;
+        padding:20px 0;
+        border:none;
+    }
+}
+
+
+
+@media(min-width:750px){
+
+    .OrderFooterBtn{width:100%;
+        background: red;
+        color:white;
+        padding:20px 0;
+        border:none;
+        border-radius:5px;
+        /*this makes the button fixed to the bottom of the page*/
+        position:absolute;
+        bottom:0px;
+        }
+
+
+     
+    .OrderFooterBtn:hover{cursor:pointer;
+        transform:scale(1.02); }
+
+
+}
+
+
+
+
+
+
+
+
+
+
